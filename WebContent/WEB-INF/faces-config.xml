@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+    http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+    
+    <!-- para que o JSF obtenha os textos dos aquivos de propriedades da aplicação
+	precisamos configurar a linguagem padrão e as linguagens suportadas, onde estao
+	os arquivos e a variavel (msg) que será utilizada para acessar os valores nas 
+	páginas xhtml -->
+	
+	<!-- O nome dos arquivos deverá respeitar  o formato:
+	messages_<locale>.properties -->
+
+    <application>
+		<locale-config>
+			<default-locale>pt_BR</default-locale>
+			<supported-locale>en</supported-locale>
+		</locale-config>
+		<resource-bundle>
+			<base-name>br.com.fiapon.imoveis.resources.messages</base-name>
+			<var>msg</var>
+		</resource-bundle>
+	</application>
+</faces-config>
